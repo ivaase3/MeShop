@@ -1,0 +1,28 @@
+<div class="container">
+    <form (ngSubmit)="agregar(nombre.value, pass.value, email.value)" >
+        <div class="row">
+            <h1><i class="fas fa-user-tie" aria-hidden="true"></i> Register</h1>
+        </div>
+        <br/>
+        <br/>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+            </div>
+            <input type="text" name="" class="form-control" placeholder="nombre" #nombre/>
+        </div><br />
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+            </div>
+            <input type="Password" name="" class="form-control" placeholder="password" #pass/>
+        </div><br/>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-envelope icon"></i></span>
+            </div>
+            <input type="email" name="" class="form-control" placeholder="email" #email/>
+        </div><br/>
+        <button type="submit" class="btn btn-success" > register</button>
+    </form>
+</div>

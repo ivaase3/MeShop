@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="content-wrapper">
+        <div class="item-container">
+            <form (ngSubmit)="uploadProduct( name.value, descrip.value, price.value, category.value )">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h5>Seleccionar image:</h5>
+                        <input type="file" accept=".png, .jpg" (change)="uploadImage($event)" >
+                        <br>
+                        
+                        <a #url [href]="downloadURL | async" class="link">{{ downloadURL | async }} </a>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success"
+                              role="progressbar" [style.width]="(uploadPercent | async) +'%'">
+          
+                              <!-- <span class="progressText" *ngIf="urlImage | async">
+                                Ok!!</span> -->
+                            </div>
+                          </div>                    
+                    </div>          
+                    <input #imageUser type="hidden" [value]="urlImage | async">      
+                    <div class="col-md-12">
+                        <br>
+                        <input type="text" class="alpaca-control form-control" placeholder="Introduce el nombre del producto" required  #name>
+                        <br>
+                        <input type="text" class="alpaca-control form-control" placeholder="Introduce la descripcion del producto" required  #descrip>
+                        <hr>
+                        <input type="number" class="alpaca-control form-control" placeholder="Introduce el precio del producto" required  #price>
+                        <br>
+                        <input type="text" class="alpaca-control form-control" placeholder="Introduce la categoria del producto" required  #category>
+                        <br>
+                        <hr>
+                        <div class="btn-group cart">
+                            <button type="submit" class="btn btn-success boton"> subir </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

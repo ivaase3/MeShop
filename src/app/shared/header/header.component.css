@@ -1,0 +1,385 @@
+.header/*{padding:10px 0px;background:#282e3c;}*/ {
+  padding: 10px 16px;
+  background: #143ca1;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+} /*position: fixed;z-index: 9;width: 100%;top: 0;}postion fixed without stricy postion:fixed start*/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.darkHeader {
+  height: auto;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.darkHeader a {
+  color: #2ec4b6 !important;
+}
+
+/*stricy content end*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  padding: 16px;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+.logo {
+  width: 20%;
+  float: left;
+}
+.navigation {
+  float: right;
+}
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.navigation ul li a {
+  color: #fff;
+}
+.navigation ul li a:hover {
+  text-decoration: none;
+}
+.nav-home:after {
+  border-top: 2px solid #9f4f5c;
+  display: block;
+  width: 45px;
+  content: "";
+  margin: 8px auto 0;
+}
+
+/*welcome to Travel*/
+.w3l_header {
+  font-size: 3em;
+  color: #262c38;
+  letter-spacing: 1px;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+}
+.welcome-to-travel {
+  margin-bottom: 50px;
+}
+.wthree_head_section p {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  color: #5e5e5e;
+  line-height: 1.8em;
+}
+.w3l_header:after {
+  border-top: 2px solid #9f4f5c;
+  display: block;
+  width: 81px;
+  content: "";
+  margin: 8px auto 0;
+}
+.about-grid1 {
+  background: url(https://bestjquery.com/tutorial/product-grid/demo9/images/img-2.jpg)
+    no-repeat center;
+  background-size: cover;
+  min-height: 450px;
+  border: 1px solid #d6d6d6;
+}
+.about-grid2 {
+  padding: 0em 0 0 4em;
+}
+.about-subgrid p {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+.about-subgrid h2 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0.5em 0;
+  display: inline-block;
+  border-right: 5px double #9f4f5c;
+  padding-right: 10px;
+}
+.about-subgrid span {
+  color: #000;
+  font-weight: 800;
+  font-size: 1em;
+  padding-left: 27px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.about-subgrid h5 {
+  color: #000;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  margin: 1em 0;
+  border: 2px solid #9f4f5c;
+  display: inline-block;
+  padding: 5px 10px;
+  width: 50%;
+}
+ul.w3l-about-list {
+  padding: 0em 0 0 2em;
+}
+ul.w3l-about-list li {
+  list-style-type: square;
+  font-size: 1.2em;
+  color: #000;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/*banner- fixed travel perfection--css-image-style*/
+.middle-w3l {
+  background: url(http://lorempixel.com/1920/1920/city/9/) no-repeat fixed;
+  background-size: cover;
+  padding: 10em 0 8em;
+}
+.middle-left-w3l {
+  text-align: right;
+  width: 70%;
+  float: right;
+}
+.middle-left-w3l h4 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.4;
+}
+.middle-left-w3l p {
+  color: #fff;
+  margin: 10px 0 20px;
+}
+.readmore-w3-agileits.about-read a {
+  background: #9f4f5c;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+.readmore-w3-agileits a {
+  border: 1px solid #fff;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+/*our services*/
+.wthree_services {
+  background: #2ec4b6;
+  padding: 5em 0;
+  margin-bottom: 50px;
+}
+h3.title {
+  color: #272525;
+  font-size: 45px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 50px;
+  position: relative;
+}
+h3.title:before {
+  content: "";
+  background: #9f4f5c;
+  position: absolute;
+  width: 110px;
+  height: 2px;
+  bottom: -25%;
+  left: 45%;
+}
+.wthree_services_left_grid1 {
+  width: 65px;
+  height: 65px;
+  background: #9f4f5c;
+  text-align: center;
+  margin: 0 auto;
+}
+.wthree_services_left_grid1 i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 2.3;
+}
+.wthree_services_left_grid_left {
+  padding: 0;
+}
+.wthree_services_left_grid_left h3 {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  font-family: "Amaranth", sans-serif;
+}
+
+/*2nd footer*/
+.footer {
+  padding: 4em 0;
+  background-color: #151414;
+}
+.footer h3,
+.footer h2 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+p.footer-one-w3ls {
+  font-size: 14px;
+}
+.footer h3 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #999;
+}
+.footer-grids form {
+  margin-top: 30px;
+}
+.footer-grids form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  color: #000;
+  outline: none;
+  border: none;
+  background: #fff;
+  letter-spacing: 1px;
+}
+.footer-grids form input[type="submit"] {
+  width: 46%;
+  font-size: 16px;
+  color: #fff;
+  display: inherit;
+  text-align: center;
+  margin: 0 auto;
+  outline: none;
+  padding: 12px;
+  border: none;
+  letter-spacing: 1px;
+  background: #9f4f5c;
+  -webkit-transition: 0.5s all;
+  margin-top: 20px;
+}
+.social-w3l {
+  text-align: left;
+  float: left;
+  width: 26%;
+}
+.social-w3l ul li {
+  display: block;
+  font-weight: 600;
+  margin: 1.5em 0em 1.8em;
+  text-align: center;
+}
+.social-w3l ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  padding: 4px 0 0 0px;
+  background: #2ec4b6;
+  transform: rotate(45deg);
+  line-height: 2em;
+}
+.social-w3r ul li {
+  display: block;
+}
+.social-w3r ul li a {
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 22px 0;
+  display: inline-block;
+}
+.social-w3l ul li a i {
+  transform: rotate(-45deg);
+  font-size: 16px;
+  line-height: 30px;
+}
+.copy-section {
+  padding: 1.5em 0;
+  background: #000;
+  text-align: center;
+}
+.copy-section p {
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.copy-section a {
+  color: #9f4f5c;
+}
+#custom-search-form {
+  margin:0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+#custom-search-form .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#custom-search-form button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.search-query:focus + button {
+  z-index: 3;   
+}
+
+.separaIcono{
+  margin-right: 2%;
+}

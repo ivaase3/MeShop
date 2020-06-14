@@ -1,0 +1,19 @@
+<footer class="footer">
+    <div class="social-area">
+        <ul>
+            <li><a [href]="infoPageService.info.facebook" target="_blank" title="Facebook"
+                    class="shr-btn-facebook"><span>Facebook</span><i class="fa fa-facebook"></i></a></li>
+            <li><a [href]="infoPageService.info.instagram" target="_blank" title="Instagram"
+                    class="shr-btn-instagram"><span>Instagram</span><i class="fa fa-instagram"></i></a></li>
+            <li><a [href]="infoPageService.info.twitter" target="_blank" title="twitter"
+                    class="shr-btn-behance"><span>Twitter</span><i class="fa fa-twitter"></i></a></li>
+            <li><a href="mailTo:{{ infoPageService.info.email }}" target="_blank" title="email"
+                class="shr-btn-envelope"><span>Email</span><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div class="credits">
+        <p>©{{ anio }} <span class="footer-white">{{ infoPageService.info.titulo }}</span></p>
+        <img class="slice-footer" src="assets/img/logo.png" alt="Logo">
+        <p class="footer-white"> {{ infoPageService.info.email }}</p>
+    </div>
+</footer>

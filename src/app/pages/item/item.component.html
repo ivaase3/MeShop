@@ -1,0 +1,27 @@
+<div  *ngIf="product" class="container-fluid">
+    <div class="content-wrapper">
+        <div class="item-container">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="product col-md-3 service-image-left">
+                        <img id="item-display" src="{{ product.url }}" alt="item"/>
+                        
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="product-title">{{ product.nombre }}</div>
+                    <div class="product-desc">{{ product.descripcion}}</div>
+                    <hr>
+                    <div class="product-price">{{ product.precio }} €</div>
+                    <div class="product-seller">{{ product.vendedor }}</div>
+                    <hr>
+                    <div class="btn-group cart">
+                        <button type="button" class="btn btn-success">
+                            contactar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+    <form (ngSubmit)="buscaUsuario( txtUser.value, txtPass.value )">
+        <div class="row">
+            <h1><i class="fas fa-user-tie" aria-hidden="true"></i> Login</h1>
+        </div>
+        <br/>
+        <br/>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+            </div>
+            <input type="text" name="" class="form-control" placeholder="email" #txtUser/>
+        </div><br />
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-envelope icon"></i></span>
+            </div>
+            <input type="Password" name="" class="form-control" placeholder="password" #txtPass/>
+        </div><br />
+        <!--<div class="checkbox">
+            <label><input type="checkbox" value="" /> Remember me</label>
+        </div><br />-->
+        <button type="submit" class="btn btn-success" (keyup.enter)="buscaUsuario( txtUser.value, txtPass.value )"><span class="glyphicon glyphicon-off"></span> Login</button><br/>
+        <br/>
+        <div style="border:1px solid black;height:1px;width:300px;"></div>
+        <br />
+        <div class="footer">
+            <p>Don't have an Account! <a routerLink="register">registrar</a></p>
+        </div>
+    </form>
+</div>
